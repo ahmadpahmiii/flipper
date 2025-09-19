@@ -104,3 +104,4 @@ tasks.matching { it.name.startsWith("configureCMake") }.all {
 preBuild.dependsOn(tasks.getByPath(':third-party:prepare'))
 
 apply plugin: 'com.vanniktech.maven.publish'
+apply plugin: 'maven-publish'
